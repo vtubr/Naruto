@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/jpg" href="icon.jpg">
+  <meta name="discription" content="بين الضباب و النيران تري فتي في نصف المعركه يعدعي ناروتو البطل ، يحب اصدقاءه و يريد ان يصبح مشهور ويرسم الابتسامه علي وجه المتابيعين" />
+  <meta name="keywords" content="Naruto , Nar , NARUTO , Stumble , naruto stumble , naruto , stumble , roblox , roblox naruto , ناروتو , نارو , ناروتو روبلوكس , استمبل ناروتو , استمبل , روبلوكس , " />
+  <meta name="author" content="Naruto" />
+  <meta http-equiv="Content-language" content="ar" />
+  <meta rel="canonical" href="https://naruto.vtubr.workers.dev/" />
+  <meta property="og:title" content="NARUTO" />
+  <meta property="og:description" content="💛 لمشاهده بثوث ناروتو الممتعه بطريقه جميله"/>
+  <meta property="og:image" content="https://naruto.vtubr.workers.dev/avatar.png" />
+  <meta property="og:url" content="https://naruto.vtubr.workers.dev/" />
+  <meta property="og:type" content="website" />
+  <meta name="site-owner" content="Naruto" />
+  <meta name="app-name" content="Naruto" />
+  <meta name="app-version" content="1.5.11" />
+  <meta name="app-build" content="001" />
+  <meta name="app-owner" content="Naruto" />
+  <meta name="app-team" content="Naruto Management Team" />
+  <meta name="app-developer" content="Killua" />
+  <meta name="app-last-update" content="2026-5-5" />
+  <meta name="app-release-date" content="2025-11-31" />
+  <meta name="app-status" content="production" />
+  <meta name="app-category" content="personal-profile" />
+  <meta name="app-note" content="Soon...." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NARUTO | Live</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-live">
+
+  <audio id="bg-music" loop>
+    <source src="fire.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button class="music-btn" id="musicToggle" title="Toggle Music">
+    <span class="music-icon">🎵</span>
+    <span class="music-label">BGM</span>
+  </button>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="naruto.jpg" alt="Logo" class="nav-logo-img" />
+      <span class="nav-logo-text">NARU<span class="accent">TO</span></span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="videos.html">🎬 Videos</a></li>
+      <li><a href="live.html" class="active">🔴 Live</a></li>
+      <li><a href="index.html#about">👤 About</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- LIVE HERO -->
+  <section class="live-hero">
+    <div class="live-hero-bg">
+      <div class="live-particle" style="--x:10%;--y:20%;--d:4s"></div>
+      <div class="live-particle" style="--x:80%;--y:60%;--d:6s"></div>
+      <div class="live-particle" style="--x:50%;--y:80%;--d:3s"></div>
+      <div class="live-particle" style="--x:25%;--y:50%;--d:7s"></div>
+      <div class="live-particle" style="--x:70%;--y:15%;--d:5s"></div>
+    </div>
+    <div class="live-hero-content">
+      <div class="live-status-badge" id="liveStatusBadge">
+        <span class="red-dot"></span>
+        <span id="liveStatusText">CHECKING LIVE STATUS...</span>
+      </div>
+      <h1>🔴 LIVE STREAM</h1>
+      <p>Watch party, reactions, Q&A — every Friday 8PM</p>
+    </div>
+  </section>
+
+  <!-- LIVE PLAYER -->
+  <section class="section live-player-section">
+    <div class="live-player-wrap">
+      <div class="live-player-main">
+        <div class="live-player-label" id="streamLabel">
+          <span class="red-dot"></span> LIVE NOW — Naruto Watch Party
+        </div>
+        <!-- YouTube Live Embed — replace YOUR_CHANNEL_ID -->
+        <div class="live-embed-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rs62E4YUlus?si=xYxymx-dnZRZCeHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <!--
+          <iframe
+            id="liveIframe"
+            src="https://www.youtube.com/embed/live_stream?channel=UCxxxxxxxxxxxxxxx&autoplay=1"
+            frameborder="0"
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title="Live Stream"
+          ></iframe>
+        -->
+        </div>
+      </div>
+
+      <!-- LIVE CHAT -->
+      <div class="live-chat-wrap">
+        <div class="live-chat-header">💬 Live Chat</div>
+        <iframe
+          id="liveChatIframe"
+          src="https://www.youtube.com/live_chat_replay?continuation=op2w0wR0Gl5DaWtxSndvWVZVTkNhSEJ2UkdSMFFYWnhXVEI0VjFsQ2NuaExkVkIzRWd0eWN6WXlSVFJaVld4MWN4b1Q2cWpkdVFFTkNndHljell5UlRSWlZXeDFjeUFCTUFBJTNEQAFaBBC4oiZyCAgEGAIgACgAeAE%253D&dark_theme=true&authuser=0"
+          frameborder="0"
+          title="Live Chat"
+        ></iframe>
+        <div class="chat-fallback">
+          <p>Chat loads when stream is live.</p>
+          <a href="https://www.youtube.com/live/rs62E4YUlus?si=42-kqhyg0NGXUiSF" target="_blank" class="btn-sm">Open on YouTube →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE LIVE LINK -->
+    <div class="mobile-live-link">
+      <p>On mobile? Watch directly on YouTube for the best experience:</p>
+      <a href="https://www.youtube.com/live/rs62E4YUlus?si=42-kqhyg0NGXUiSF" target="_blank" class="btn-primary btn-yt">
+        📱 Open YouTube Live
+      </a>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section schedule-section">
+    <div class="section-header">
+      <h2>📅 Stream Schedule</h2>
+      <p>Never miss a stream — mark your calendar</p>
+    </div>
+    <div class="schedule-grid">
+      <div class="schedule-card highlight">
+        <div class="sched-day">FRIDAY</div>
+        <div class="sched-time">8:00 PM</div>
+        <div class="sched-title">🎬 Naruto Watch Party</div>
+        <div class="sched-desc">Live episode watch-along with commentary</div>
+        <span class="sched-tag upcoming">NEXT STREAM</span>
+      </div>
+      <div class="schedule-card">
+        <div class="sched-day">SATURDAY</div>
+        <div class="sched-time">6:00 PM</div>
+        <div class="sched-title">⚡ Q&A Session</div>
+        <div class="sched-desc">Your questions answered live</div>
+      </div>
+      <div class="schedule-card">
+        <div class="sched-day">SUNDAY</div>
+        <div class="sched-time">4:00 PM</div>
+        <div class="sched-title">🏆 Tournament Watch</div>
+        <div class="sched-desc">Watching tournament arcs together</div>
+      </div>
+      <div class="schedule-card">
+        <div class="sched-day">TUESDAY</div>
+        <div class="sched-time">7:00 PM</div>
+        <div class="sched-title">📖 Lore Dive Live</div>
+        <div class="sched-desc">Deep dive discussion streams</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST STREAMS -->
+  <section class="section">
+    <div class="section-header">
+      <h2>🎞️ Past Streams</h2>
+      <p>Catch up on what you missed</p>
+    </div>
+    <div class="past-streams-grid">
+      <div class="past-stream-card">
+        <div class="ps-thumb">
+          <iframe src="https://www.youtube.com/embed/rs62E4YUlus" title="بث مباشر بصوتي 😃 | ستمبل قايز رومات وفعاليات | NarutoYt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="ps-info">
+          <span class="tag">📼 Past Stream</span>
+          <h4>Watch Party — Pain Arc</h4>
+          <p>2.4K viewers • 3 hours</p>
+        </div>
+      </div>
+      <div class="past-stream-card">
+        <div class="ps-thumb">
+          <iframe src="https://www.youtube.com/embed/K1TFPnMVH_g" title="بث مباشر ستمبل قايز رومات وفعاليات | NarutoYt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="ps-info">
+          <span class="tag">📼 Past Stream</span>
+          <h4>Q&A — Ninja Trivia Night</h4>
+          <p>1.8K viewers • 2 hours</p>
+        </div>
+      </div>
+      <!--
+      <div class="past-stream-card">
+        <div class="ps-thumb">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLbFjvpclaCsNFBoMoHbdUVYgNhRSTh8BL"
+            frameborder="0" allowfullscreen loading="lazy" title="Past Stream 3"></iframe>
+        </div>
+        <div class="ps-info">
+          <span class="tag">📼 Past Stream</span>
+          <h4>Lore Deep Dive — Otsutsuki</h4>
+          <p>3.1K viewers • 4 hours</p>
+        </div>
+      </div>
+    -->
+    </div>
+  </section>
+
+  <!-- NOTIFICATION CTA -->
+  <section class="notif-section">
+    <div class="notif-inner">
+      <div class="notif-icon">🔔</div>
+      <h2>Never Miss a Stream</h2>
+      <p>Subscribe and hit the bell icon on YouTube to get notified the moment we go live!</p>
+      <a href="https://www.youtube.com/@naru4me" target="_blank" class="btn-primary btn-yt">
+        🔔 Subscribe + Notify
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">NARU<span class="accent">TO</span></div>
+    <p>© 2025 Naruto — All rights reserved. Believe it! 🍥</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="live.html">Live</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Live status checker
+    async function checkLiveStatus() {
+      const badge = document.getElementById('liveStatusBadge');
+      const text = document.getElementById('liveStatusText');
+      const label = document.getElementById('streamLabel');
+      // Since we can't directly check YouTube API without a key,
+      // we show the schedule-based status
+      const now = new Date();
+      const day = now.getDay(); // 5 = Friday
+      const hour = now.getHours();
+      if (day === 5 && hour >= 20 && hour < 24) {
+        badge.classList.add('is-live');
+        text.textContent = 'LIVE NOW';
+        label.innerHTML = '<span class="red-dot"></span> 🔴 LIVE NOW — Naruto Watch Party';
+      } else {
+        badge.classList.remove('is-live');
+        text.textContent = 'OFFLINE — Next: Friday 8PM';
+        label.innerHTML = '⏰ Stream starts Friday at 8PM';
+      }
+    }
+    checkLiveStatus();
+    setInterval(checkLiveStatus, 60000);
+  </script>
+</body>
+</html>
